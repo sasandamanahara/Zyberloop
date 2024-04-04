@@ -68,8 +68,8 @@ class Footer extends Component {
                   <Link to="#">
                     <img src={logolight} alt="" className="" height="150" />
                   </Link>
-                  <p className="text-white-50 my-4">Cras ultricies mi eu turpis sit hendrerit fringilla vestibulum ante ipsum primis in faucibus ultrices posuere cubilia.</p>
-                  <Link to="#" className="text-white-70"><FeatherIcon className="icon mr-1" icon="instagram" />{" "} Join Us In Instagram</Link>
+                  <p className="text-white-50 my-4"></p>
+                  <Link to="#" className="text-white-70"><FeatherIcon className="icon mr-1"  />{" "} </Link>
                 </div>
               </Col>
               <Col lg={7} className="offset-lg-1">

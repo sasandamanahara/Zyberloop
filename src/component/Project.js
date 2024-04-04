@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 import Img1 from "../assets/images/project/img-1.png";
 import Img2 from "../assets/images/project/img-2.png";
+import Img3 from "../assets/images/project/img-3.png";
 
 export default class Project extends Component {
   constructor(props) {
@@ -24,7 +25,14 @@ export default class Project extends Component {
           title: 'Schoolpaperbank.lk',
           designation: 'Book Store',
           link: 'https://schoolpaperbank.lk/'
-        }
+        },
+        {
+          id: 3,
+          img: Img3,
+          title: 'ALstore.lk',
+          designation: 'Online Book Store',
+          link: 'https://alstore.lk/'
+        },
       ]
     };
   }
