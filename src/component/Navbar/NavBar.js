@@ -42,9 +42,9 @@ class NavbarPage extends Component {
           >
             <Link className="logo me-3" to="/">
               {this.props.imglight === true ? (
-                <img src={logolight} alt="" height="26" />
+                <img src={logolight} alt="" height="30" />
               ) : (
-                <img src={logodark} alt="" height="26" />
+                <img src={logodark} alt="" height="30" />
               )}
             </Link>
             <NavbarToggler onClick={this.toggle}>
@@ -78,9 +78,12 @@ class NavbarPage extends Component {
                   ))}
                 </Nav>
                 <ul className="list-inline ml-auto menu-social-icon mb-0 py-2 py-lg-0">
-                  <li className="list-inline-item ml-0">
-                    <Link to="#" className="menu-social-link"><FeatherIcon icon="facebook" className="icon-xs sw_1-5" /></Link>
-                  </li>{" "}
+                <li className="list-inline-item ml-0">
+    <Link to="https://web.facebook.com/zyberloop" className="menu-social-link" target="_blank">
+        <FeatherIcon icon="facebook" className="icon-xs sw_1-5" />
+    </Link>
+</li>
+{" "}
                   <li className="list-inline-item">
                     <Link to="#" className="menu-social-link"><FeatherIcon icon="twitter" className="icon-xs sw_1-5" /></Link>
                   </li>{" "}
