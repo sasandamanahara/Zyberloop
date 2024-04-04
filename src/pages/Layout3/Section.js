@@ -15,9 +15,9 @@ class Section extends Component {
             <Row className="justify-content-center">
               <Col lg={7}>
               <div className="text-center">
-                <h1 className="hero-3-title text-dark line-height-1_4">Create Amazing Landing Page With Nody Template</h1>
-                <p className="text-muted mb-4 pb-3">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione sequinesciunt.</p>
-                <Link to="#" className="btn btn-primary">Get Started <span className="ml-2 right-icon">&#8594;</span></Link>
+                <h1 className="hero-3-title text-dark line-height-1_4">Scale up Your Business to Meet New Heights</h1>
+                <p className="text-muted mb-4 pb-3">Experience exponential growth with Zyberloop's innovative web development solutions. From captivating designs to seamless functionality, our services are designed to propel your business forward. Expand your reach, engage your audience, and achieve your goals with Zyberloop. Let's shape the future of your business together.</p>
+                <a href="https://wa.link/uvs73x" className="btn btn-success">Send Us a Message <span className="ml-2 right-icon">&#8594;</span></a>
                 </div>
               </Col>
             </Row>

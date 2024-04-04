@@ -19,7 +19,7 @@ export default class Contact extends Component {
               <Col lg={7}>
                 <div className="text-center mb-5">
                   <h2 className="">Contact Us</h2>
-                  <p className="text-muted">Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam nisi commodi consequatur.</p>
+                  <p className="text-muted"></p>
                 </div>
               </Col>
             </Row>
@@ -29,18 +29,19 @@ export default class Contact extends Component {
                   <div className="text-center">
                     <img src={ContactImg} alt="" className="img-fluid d-block w-75 mx-auto" />
                     <h4 className="mt-4">Are You Facing Any Problem..?</h4>
-                    <p className="text-muted mb-4">It va esser tam simplic quam Occidental in fact it va esser Occidental angles quam un skeptic cambridge es.</p>
-                    <Link to="#" className="btn btn-success"><FeatherIcon className="icon mr-2 icon-fill-white" icon="message-circle" /> Start Live Chat</Link>
+                    <p className="text-muted mb-4"></p>
+                    <a href="https://wa.link/sfune1" className="btn btn-success" target="_blank" rel="noopener noreferrer"><FeatherIcon className="icon mr-2 icon-fill-white" icon="message-circle" /> Start Live Chat</a>
+
                     <p className="mt-4">Or you can contact at</p>
                     <Row>
                       <Col md={6}>
                         <Link to="#">
-                          <div className="badge f-14 bg-soft-dark text-muted"><span className="text-dark mr-1">Email:</span> Youremailid@gmail.com</div>
+                          <div className="badge f-14 bg-soft-dark text-muted"><span className="text-dark mr-1">Email:</span> info@zyberloop.com</div>
                         </Link>
                       </Col>
                       <Col md={6} className="mt-2 mt-sm-0">
                         <Link to="#">
-                          <div className="badge f-14 bg-soft-dark text-muted"><span className="text-dark mr-1">Phone:</span> (001) 1234 567 890</div>
+                          <div className="badge f-14 bg-soft-dark text-muted"><span className="text-dark mr-1">Phone:</span> (+94) 72 303 2555</div>
                         </Link>
                       </Col>
                     </Row>

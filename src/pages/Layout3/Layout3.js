@@ -8,7 +8,7 @@ const About = React.lazy(() => import("../../component/About"));
 const Services = React.lazy(() => import("../../component/Services"));
 const Feature = React.lazy(() => import("../../component/Feature"));
 const Project = React.lazy(() => import("../../component/Project"));
-const Clients = React.lazy(() => import("../../component/Clients"));
+//const Clients = React.lazy(() => import("../../component/Clients"));
 const Contact = React.lazy(() => import("../../component/Contact"));
 const Footer = React.lazy(() => import("../../component/Footer/Footer"));
 
@@ -22,7 +22,7 @@ class Layout3 extends Component {
         { id: 3, idnm: "services", navheading: "Services" },
         { id: 4, idnm: "features", navheading: "Features" },
         { id: 5, idnm: "project", navheading: "Project" },
-        { id: 6, idnm: "clients", navheading: "Clients" },
+        // { id: 6, idnm: "clients", navheading: "Clients" },
         { id: 7, idnm: "contact", navheading: "Contact Us" },
       ],
       pos: document.documentElement.scrollTop,
@@ -89,8 +89,8 @@ class Layout3 extends Component {
           {/* Importing Project */}
           <Project />
 
-          {/* Importing Client */}
-          <Clients />
+          {/* Importing Client
+          <Clients /> */}
 
           {/* Importing Contact Us */}
           <Contact />

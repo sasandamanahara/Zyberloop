@@ -31,7 +31,7 @@ class Feature extends Component {
               <Col lg={7}>
                 <div className="text-center mb-5">
                   <h2 className="">Our Features</h2>
-                  <p className="text-muted">Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam nisi commodi consequatur.</p>
+                  <p className="text-muted">Our features include cutting-edge technology implementation, user-centric design, and data-driven marketing approaches, ensuring optimal performance and results for your business.</p>
                 </div>
               </Col>
             </Row>
@@ -55,22 +55,22 @@ class Feature extends Component {
                     <NavItem>
                       <NavLink href="#" className={classnames({ active: this.state.activeTab === 'v-pills-work' },"rounded" )} onClick={() => { this.toggleTab('v-pills-work'); }} id="v-pills-work-tab">
                         <h4 className="text-dark f-18">Works With Existing Apps</h4>
-                        <p className="text-muted f-15">At solmen necessi a uniform grammatica pronunciation sommun plu paroles ma quande.</p>
-                        <p className="text-primary mb-0 read-more">More Information<span className="right-icon ml-2">&#8594;</span></p>
+                        <p className="text-muted f-15">We specialize in enhancing and expanding your existing apps and websites, leveraging our expertise to elevate their functionality and performance to meet your evolving needs.</p>
+                        
                       </NavLink>
                     </NavItem>
                     <NavItem>
                       <NavLink href="#" className={classnames({ active: this.state.activeTab === 'v-pills-marketing' },"rounded" )}  onClick={() => { this.toggleTab('v-pills-marketing'); }} id="v-pills-work-tab">
                         <h4 className="text-dark f-18">Easy Email Marketing</h4>
-                        <p className="text-muted f-15">At solmen necessi a uniform grammatica pronunciation sommun plu paroles ma quande.</p>
-                        <p className="text-primary mb-0 read-more">More Information<span className="right-icon ml-2">&#8594;</span></p>
+                        <p className="text-muted f-15">We offer targeted email marketing campaigns designed to reach and engage your audience effectively, driving conversions and fostering customer loyalty.</p>
+                        
                       </NavLink>
                     </NavItem>
                     <NavItem>
                       <NavLink href="#" className={classnames({ active: this.state.activeTab === 'v-pills-feedback' },"rounded" )} onClick={() => { this.toggleTab('v-pills-feedback'); }} id="v-pills-work-tab">
                         <h4 className="text-dark f-18">Get Private Customers Feedback</h4>
-                        <p className="text-muted f-15">At solmen necessi a uniform grammatica pronunciation sommun plu paroles ma quande.</p>
-                        <p className="text-primary mb-0 read-more">More Information<span className="right-icon ml-2">&#8594;</span></p>
+                        <p className="text-muted f-15">We prioritize private customer feedback to continuously improve our services and ensure customer satisfaction.</p>
+                        
                       </NavLink>
                     </NavItem>
                   </Nav>

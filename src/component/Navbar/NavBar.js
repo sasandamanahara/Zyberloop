@@ -1,3 +1,4 @@
+// Import anchor tag instead of Link
 import React, { Component } from "react";
 import {
   Navbar,
@@ -8,16 +9,12 @@ import {
   Container,
   Collapse
 } from "reactstrap";
-import { Link } from "react-router-dom";
+import FeatherIcon from "feather-icons-react";
+import ScrollspyNav from "./Scrollspy";
 
 // Import Logo
 import logodark from "../../assets/images/logo-dark.png";
 import logolight from "../../assets/images/logo-light.png";
-
-//import icon
-import FeatherIcon from "feather-icons-react";
-
-import ScrollspyNav from "./Scrollspy";
 
 class NavbarPage extends Component {
   constructor(props) {
@@ -25,7 +22,15 @@ class NavbarPage extends Component {
     this.state = {
       isOpenMenu: false,
     };
+    // Binding toggle method
+    this.toggle = this.toggle.bind(this);
   }
+
+  // Toggle method to handle NavbarToggler click
+  toggle() {
+    this.setState({ isOpenMenu: !this.state.isOpenMenu });
+  }
+
   render() {
     let targetId = this.props.navItems.map((item) => {
       return item.idnm;
@@ -40,13 +45,13 @@ class NavbarPage extends Component {
             id="navbar"
             container
           >
-            <Link className="logo me-3" to="/">
+            <a className="logo me-3" href="/"> {/* Changed Link to <a> */}
               {this.props.imglight === true ? (
-                <img src={logolight} alt="" height="26" />
+                <img src={logolight} alt="" height="30" />
               ) : (
-                <img src={logodark} alt="" height="26" />
+                <img src={logodark} alt="" height="30" />
               )}
-            </Link>
+            </a>
             <NavbarToggler onClick={this.toggle}>
               <span className="ti-menu"></span>
             </NavbarToggler>
@@ -79,16 +84,19 @@ class NavbarPage extends Component {
                 </Nav>
                 <ul className="list-inline ml-auto menu-social-icon mb-0 py-2 py-lg-0">
                   <li className="list-inline-item ml-0">
-                    <Link to="#" className="menu-social-link"><FeatherIcon icon="facebook" className="icon-xs sw_1-5" /></Link>
-                  </li>{" "}
+                    <a href="https://web.facebook.com/zyberloop" className="menu-social-link" target="_blank">
+                      <FeatherIcon icon="facebook" className="icon-xs sw_1-5" />
+                    </a>
+                  </li>
                   <li className="list-inline-item">
-                    <Link to="#" className="menu-social-link"><FeatherIcon icon="twitter" className="icon-xs sw_1-5" /></Link>
-                  </li>{" "}
-                  <li className="list-inline-item">
-                    <Link to="#" className="menu-social-link"><FeatherIcon icon="instagram" className="icon-xs sw_1-5" /></Link>
-                  </li>{" "}
+                    <a href="https://www.instagram.com/zyberloop" className="menu-social-link">
+                      <FeatherIcon icon="instagram" className="icon-xs sw_1-5" />
+                    </a>
+                  </li>
                   <li className="list-inline-item mr-0">
-                    <Link to="#" className="menu-social-link"><FeatherIcon icon="linkedin" className="icon-xs sw_1-5" /></Link>
+                    <a href="https://www.linkedin.com/company/101731208/" className="menu-social-link">
+                      <FeatherIcon icon="linkedin" className="icon-xs sw_1-5" />
+                    </a>
                   </li>
                 </ul>
               </ScrollspyNav>
@@ -99,5 +107,5 @@ class NavbarPage extends Component {
     );
   }
 }
-// }
+
 export default NavbarPage;

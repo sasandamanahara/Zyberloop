@@ -17,8 +17,8 @@ export default class Services extends Component {
             <Row className="justify-content-center">
               <Col lg={7}>
                 <div className="text-center mb-5">
-                  <h2 className="">Our Services</h2>
-                  <p className="text-muted">Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam nisi commodi consequatur.</p>
+                  <h2 className="">Other Services</h2>
+                  <p className="text-muted">We offer comprehensive solutions encompassing web and app development as well as digital marketing strategies to accelerate your business growth in the digital landscape.</p>
                 </div>
               </Col>
             </Row>
@@ -30,9 +30,9 @@ export default class Services extends Component {
                       <img src={Icon1} alt="" className="img-fluid d-block" />
                     </div>
                   </div>
-                  <h4 className="service-title mt-4 mb-3 f-18">Awesome Support</h4>
-                  <p className="service-subtitle mb-4 f-15">Omnicos directe al desirabilite de une nov lingua franca a refusa continuar payar custosi traductores.</p>
-                  <Link to="#" className="read-more">More<span className="right-icon ml-2">&#8594;</span></Link>
+                  <h4 className="service-title mt-4 mb-3 f-18">Life Time Support</h4>
+                  <p className="service-subtitle mb-4 f-15">We provide lifetime support for our software services, ensuring that your systems continue to operate smoothly and efficiently long after implementation.</p>
+                  
                 </div>
               </Col>
               <Col lg={4}>
@@ -42,9 +42,9 @@ export default class Services extends Component {
                       <img src={Icon2} alt="" className="img-fluid d-block" />
                     </div>
                   </div>
-                  <h4 className="service-title mt-4 mb-3 f-18">Analytics Security</h4>
-                  <p className="service-subtitle mb-4 f-15">Omnicos directe al desirabilite de une nov lingua franca a refusa continuar payar custosi traductores.</p>
-                  <Link to="#" className="read-more">More<span className="right-icon ml-2">&#8594;</span></Link>
+                  <h4 className="service-title mt-4 mb-3 f-18">Hosting Services</h4>
+                  <p className="service-subtitle mb-4 f-15">We provide reliable hosting and domain services for web applications, ensuring seamless performance and optimal online presence for your digital ventures.</p>
+                 
                 </div>
               </Col>
               <Col lg={4}>
@@ -54,9 +54,9 @@ export default class Services extends Component {
                       <img src={Icon3} alt="" className="img-fluid d-block" />
                     </div>
                   </div>
-                  <h4 className="service-title mt-4 mb-3 f-18">Data Privacy</h4>
-                  <p className="service-subtitle mb-4 f-15">Omnicos directe al desirabilite de une nov lingua franca a refusa continuar payar custosi traductores.</p>
-                  <Link to="#" className="read-more">More<span className="right-icon ml-2">&#8594;</span></Link>
+                  <h4 className="service-title mt-4 mb-3 f-18">Software Develpoment</h4>
+                  <p className="service-subtitle mb-4 f-15">Our Software Development services provide tailored solutions to optimize your operations and drive innovation, empowering your business for success.</p>
+                  
                 </div>
               </Col>
             </Row>
