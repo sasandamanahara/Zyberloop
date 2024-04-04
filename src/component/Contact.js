@@ -30,7 +30,7 @@ export default class Contact extends Component {
                     <img src={ContactImg} alt="" className="img-fluid d-block w-75 mx-auto" />
                     <h4 className="mt-4">Are You Facing Any Problem..?</h4>
                     <p className="text-muted mb-4"></p>
-                    <a href="https://wa.link/uvs73x" className="btn btn-success" target="_blank" rel="noopener noreferrer"><FeatherIcon className="icon mr-2 icon-fill-white" icon="message-circle" /> Start Live Chat</a>
+                    <a href="https://wa.link/sfune1" className="btn btn-success" target="_blank" rel="noopener noreferrer"><FeatherIcon className="icon mr-2 icon-fill-white" icon="message-circle" /> Start Live Chat</a>
 
                     <p className="mt-4">Or you can contact at</p>
                     <Row>
