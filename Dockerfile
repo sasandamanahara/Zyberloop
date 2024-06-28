@@ -1,10 +1,10 @@
-# Use an official Node.js runtime as a parent image
+# Stage 1: Build the app
 FROM node:14 AS build
 
-# Set the working directory inside the container
+# Set the working directory
 WORKDIR /usr/src/app
 
-# Copy the package.json and package-lock.json files
+# Copy package.json and package-lock.json
 COPY package*.json ./
 
 # Install dependencies
@@ -16,20 +16,20 @@ COPY . .
 # Build the app
 RUN npm run build
 
-# Stage 2: Use a lightweight Node.js image to serve the app
-FROM node:14-slim
+# Stage 2: Serve the app
+FROM node:14
 
-# Install serve globally
-RUN npm install -g serve
-
-# Set the working directory inside the container
+# Set the working directory
 WORKDIR /usr/src/app
 
-# Copy the build output from the previous stage
+# Copy the built files from the previous stage
 COPY --from=build /usr/src/app/build ./build
 
-# Expose port 3000
-EXPOSE 3000
+# Install a simple HTTP server to serve the static files
+RUN npm install -g serve
 
-# Start the app with serve
-CMD ["serve", "-s", "build", "-l", "3000"]
+# Expose port 5000
+EXPOSE 5000
+
+# Command to serve the app
+CMD ["serve", "-s", "build"]
